@@ -345,7 +345,7 @@ footer {
         padding: 1rem;
         outline: none;
         border: none;
-        border-radius: 13px;
+        /* border-radius: 13px; */
     }
     
     .section-container >div form input[type=submit] {
