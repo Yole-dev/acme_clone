@@ -1,0 +1,698 @@
+:root {
+    --black: rgba(0, 0, 0, 0.87);
+    --orange-red:  rgba(255, 68, 0, 0.842);
+    --shadow: rgba(0, 0, 0, 0.027);
+    --max-width-for-laptop: 1200px;
+    --max-width-for-tab: ;
+    --max-width-for-mobile: 360px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+header {
+    background-color: var(--black);
+    border-bottom: solid 3px var(--orange-red);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 1rem;
+}
+
+nav>p {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav >p span {
+    color: var(--orange-red);
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav >ul li {
+    list-style-type: none;
+}
+
+nav >ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+    padding: 15px;
+}
+
+nav >ul li a:hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--orange-red);
+}
+
+.container {
+    max-width: var(--max-width-for-laptop);
+    margin: 0 auto;
+    /* flex: 1; */
+}
+
+/* for main  */
+.hero {
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: var(--shadow);
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    max-width: var(--max-width-for-laptop);
+    text-align: center;
+    padding: 3rem;
+}
+
+.text h1 {
+    font-size: 60px;
+    text-transform: capitalize; 
+    padding-bottom: 1.5rem;
+}
+
+section {
+    background-color: var(--black);
+    padding: 2rem 2rem 0.5rem;
+}
+
+.section-container {
+    margin: 0 auto;
+    max-width: var(--max-width-for-laptop);
+}
+
+.section-container >div {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-container >div h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 5rem;
+}
+
+.section-container >div form{
+    display: flex;
+    padding-right: 5rem;
+}
+
+.section-container >div form input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 13px;
+}
+
+.section-container >div form input[type=submit] {
+    color: white;
+    background-color: var(--orange-red);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.424);
+}
+
+.section-2 {
+    background-color: white;
+}
+
+.section-container2 >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+.box {
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+}
+
+.box img {
+    width: 90px;
+    height: auto;
+}
+
+.box h3 {
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.box h3>span {
+    text-transform: uppercase;
+}
+
+.box2 {
+    text-align: left;
+    padding: 1rem;
+    color: black;
+}
+
+.box2 h2 {
+    padding: 1rem 0;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.black-box2 {
+    background-color: var(--black);
+    color: white;
+}
+
+.section-container2 >.flex>div:first-of-type {
+    width: 60%;
+    margin-right: 2rem;
+}
+
+.aside {
+    width: 25%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--orange-red);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.flex >div h1 {
+    color: black;
+    text-align: left;
+}
+
+.flex >div .ash-box2 {
+    background-color: var(--shadow);
+    margin-bottom: 5px;
+}
+
+.flex >div .ash-box2:first-of-type {
+    margin-top: 1rem;
+}
+
+.flex >div .ash-box2:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.flex >div .ash-box2 >p:last-of-type {
+    padding: 1rem 0;
+}
+
+.box2 h2 {
+    padding: 1rem;
+}
+
+.box2 >div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.box2 div >input[type=text] {
+    display: inline-block;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.box2 div >input[type=email] {
+    display: inline-block;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.box2 input[type=submit] {
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background-color: var(--orange-red);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.box2 input[type=submit]:hover {
+    box-shadow: var(--shadow);
+}
+
+.box2 textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+/* for tab view  */
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: var(--max-width-for-mobile);
+    }
+
+    .section-container {
+        margin: 0 auto;
+        max-width: var(--max-width-for-mobile);
+    }
+
+    .text {
+        max-width: var(--max-width-for-mobile);
+        color: rgba(255, 255, 255, 0.966);
+    }
+
+    .hero {
+        background-image: url(images/laptop-girl.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: auto;
+    }
+
+
+    .section-container >div {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-container >div h3 {
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .section-container >div form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .section-container >div form input {
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 13px;
+    }
+    
+    .section-container >div form input[type=submit] {
+        color: white;
+        background-color: var(--orange-red);
+        margin-top: 7px;
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    .section-container2 >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+    }
+
+    .box h3 {
+        text-transform: capitalize;
+        padding: 1rem 0;
+    }
+
+    .box h3>span {
+        text-transform: uppercase;
+    }
+
+    .box2 {
+        text-align: center;
+        padding: 1rem;
+        color: black;
+    }
+
+    .box2 h2 {
+        padding: 1rem 0;
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+
+    .black-box2 {
+        background-color: var(--black);
+        color: white;
+    }
+
+    .section-container2 >.flex>div:first-of-type {
+        width: 100%;
+        margin-left: 1.7rem;
+    }
+    
+    .aside {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        background-color: var(--orange-red);
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .flex >div h1 {
+        color: black;
+        text-align: center;
+    }
+
+    .flex >div .ash-box2 {
+        background-color: var(--shadow);
+        margin-bottom: 5px;
+    }
+
+    .flex >div .ash-box2:first-of-type {
+        margin-top: 1rem;
+    }
+
+    .flex >div .ash-box2:last-of-type {
+        margin-bottom: 1rem;
+    }
+
+    .flex >div .ash-box2 >p:last-of-type {
+        padding: 1rem 0;
+    }
+    
+    .box2 h2 {
+        padding: 1rem;
+    }
+
+    .box2 >div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .box2 div >input[type=text] {
+        display: inline-block;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    .box2 div >input[type=email] {
+        display: inline-block;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    .box2 input[type=submit] {
+        display: inline-block;
+        padding: 12px;
+        width: 100%;
+        background-color: var(--orange-red);
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box2 input[type=submit]:hover {
+        box-shadow: var(--shadow);
+    }
+
+    .box2 textarea {
+        border: none;
+        outline: none;
+        padding: 10px;
+    }
+
+    .big-box {
+        width: 100%;
+    }
+}
+
+
+
+/* for mobile view */
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: var(--max-width-for-mobile);
+    }
+
+    .section-container {
+        margin: 0 auto;
+        max-width: var(--max-width-for-mobile);
+    }
+
+    .text {
+        max-width: var(--max-width-for-mobile);
+        color: rgba(255, 255, 255, 0.966);
+    }
+
+    .hero {
+        background-image: url(images/working-girl.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: var(--shadow);
+        height: auto;
+    }
+
+
+    .section-container >div {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-container >div h3 {
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .section-container >div form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+   .section-container >div form input {
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 13px;
+    }
+    
+    .section-container >div form input[type=submit] {
+        color: white;
+        background-color: var(--orange-red);
+        margin-top: 7px;
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    .section-container2 >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+    }
+
+    .box2 {
+        text-align: center;
+        padding: 1rem;
+        color: black;
+    }
+
+    .box2 h2 {
+        padding: 1rem 0;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    .black-box2 {
+        background-color: var(--black);
+        color: white;
+    }
+
+    .section-container2 >.flex>div:first-of-type {
+        width: 100%;
+        margin-left: 1.7rem;
+    }
+    
+    .aside {
+        width: 100%;
+        height: auto;
+    }
+    .box h3 {
+        text-transform: capitalize;
+        padding: 1rem 0;
+    }
+
+    .box h3>span {
+        text-transform: uppercase;
+    }
+
+    footer {
+        background-color: var(--orange-red);
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .flex >div h1 {
+        color: black;
+        text-align: center;
+    }
+
+    .flex >div .ash-box2 {
+        background-color: var(--shadow);
+        margin-bottom: 5px;
+    }
+
+    .flex >div .ash-box2:first-of-type {
+        margin-top: 1rem;
+    }
+
+    .flex >div .ash-box2:last-of-type {
+        margin-bottom: 1rem;
+    }
+
+    .flex >div .ash-box2 >p:last-of-type {
+        padding: 1rem 0;
+    }
+
+    .box2 h2 {
+        padding: 1rem;
+    }
+
+    .box2 >div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .box2 div >input[type=text] {
+        display: inline-block;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    .box2 div >input[type=email] {
+        display: inline-block;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    .box2 input[type=submit] {
+        display: inline-block;
+        padding: 12px;
+        width: 100%;
+        background-color: var(--orange-red);
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .box2 input[type=submit]:hover {
+        box-shadow: var(--shadow);
+    }
+
+    .box2 textarea {
+        border: none;
+        outline: none;
+        padding: 10px;
+    }
+
+    .big-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
