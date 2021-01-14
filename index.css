@@ -71,7 +71,7 @@ nav >ul li a:hover {
 
 /* for main  */
 .hero {
-    /* background-image: url(images/coding.jpg); */
+    background-image: url(images/coding.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
