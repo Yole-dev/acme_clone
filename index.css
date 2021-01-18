@@ -512,11 +512,11 @@ footer {
 
     .text {
         max-width: var(--max-width-for-mobile);
-        color: rgba(255, 255, 255, 0.966);
+        color: rgba(0, 0, 0, 0.59);
     }
 
     .text >h1 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .hero {
