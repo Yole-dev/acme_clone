@@ -515,6 +515,10 @@ footer {
         color: rgba(255, 255, 255, 0.966);
     }
 
+    .text >h1 {
+        font-size: 25px;
+    }
+
     .hero {
         background-image: url(images/working-girl.webp);
         background-size: cover;
